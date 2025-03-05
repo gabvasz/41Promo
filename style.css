@@ -47,4 +47,4 @@ table {
 	opacity: 0;
 }
 
-
+@import url(./_scss/bootstrap.css);
