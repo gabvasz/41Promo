@@ -43,13 +43,8 @@ table {
 	border-spacing: 0;
 }
 
-@import url(./_scss/bootstrap-reboot.css);
-
-@import url(./_scss/bootstrap.css);
-
-@import url(./_scss/bootstrap-utilities.css);
-
 .hero, #h2, #h3, #h4 {
 	opacity: 0;
 }
+
 
