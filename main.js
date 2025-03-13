@@ -82,3 +82,15 @@ typewriter
   .typeString('celebração.')
   .pauseFor(5000)
   .start();
+
+  gsap.fromTo('.img-move', {
+    x: -600,
+  },
+  {
+    x: 2000,
+    duration: 35,
+    repeat: -1,
+    yoyo: true,
+  }
+
+  )
