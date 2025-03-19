@@ -109,9 +109,19 @@ body {
 
 .img-evento {
 	position: absolute;
-	height: 30%;
+	height: 45%;
 	top: 10px;
 	left: 10px;
+	@media (max-width: 706px) {
+		height: 40%;
+	}
+}
+
+.img-evento2 {
+	position: absolute;
+	height: 45%;
+	top: 100px;
+	right: 40px;
 	@media (max-width: 706px) {
 		height: 40%;
 	}
