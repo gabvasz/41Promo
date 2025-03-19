@@ -83,14 +83,45 @@ typewriter
   .pauseFor(5000)
   .start();
 
-  gsap.fromTo('.img-move', {
-    x: -600,
-  },
-  {
-    x: 2000,
-    duration: 35,
-    repeat: -1,
-    yoyo: true,
-  }
+ 
+  function initColorScroll() {
+    const sections = document.querySelectorAll('.color-section')
+ 
 
-  )
+
+  sections.forEach(section => {
+    const sectionId = section.getAttribute('id');
+    const bgColor = section.getAttribute('data-bgcolor');
+
+
+ScrollTrigger.create({
+    trigger: section,
+    start: 'top 50%',
+    end: 'bottom 50%',
+
+    onEnter: () => updateColors(bgColor, sectionId),
+    onEnterBack: () => updateColors(bgColor, sectionId),
+    
+    
+});
+  });
+
+  function updateColors(bgColor, sectionId) {
+    
+    console.log('Entering section: ${sectionId}');
+
+    gsap.to('body', {
+        backgroundColor: bgColor,
+        duration: 0.5,
+        ease: 'power1.inOut'
+    })
+};
+};
+
+  // iniciar função
+  window.addEventListener('load', initColorScroll);
+
+
+
+
+    

@@ -47,4 +47,72 @@ table {
 	opacity: 0;
 }
 
+.hero {
+	width: 20vw;
+	position: relative;
+	@media (max-width: 706px) {
+		width: 50vw;
+	}
+}
+
+
 @import url(./_scss/bootstrap.css);
+
+
+body {
+	/* Add this if it's missing */
+	transition: background-color 0.3s ease;
+	background-color: #00285C;
+  }
+
+  .color-section {
+	height: 100vh;
+  }
+
+  .mouse {
+	width: 10px;
+	height: 55px;
+	border: 1px solid #2a3c5c;
+	opacity: 100%;
+	border-radius: 60px;
+	position: relative;
+	padding: 1em;
+	&::before {
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #2a3c5c;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+.img-evento {
+	position: absolute;
+	height: 30%;
+	top: 10px;
+	left: 10px;
+	@media (max-width: 706px) {
+		height: 40%;
+	}
+}
