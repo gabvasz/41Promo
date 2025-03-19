@@ -111,7 +111,7 @@ body {
 	position: absolute;
 	height: 45%;
 	top: 20px;
-	left: 10px;
+	left:z 10px;
 	@media (max-width: 706px) {
 		height: 25%;
 	}
