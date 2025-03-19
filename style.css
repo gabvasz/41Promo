@@ -125,7 +125,7 @@ body {
 	z-index: -10;
 	@media (max-width: 706px) {
 		height: 25%;
-		top: -10px;
+		top: 0px;
 	right: 10px;
 	}
 }
@@ -133,8 +133,8 @@ body {
 .img-evento3 {
 	position: absolute;
 	height: 45%;
-	top: 180px;
-	left: 30px;
+	top: 280px;
+	left: 60px;
 	z-index: -10;
 
 	@media (max-width: 706px) {
@@ -147,7 +147,7 @@ body {
 .img-evento4 {
 	position: absolute;
 	height: 45%;
-	top: 190px;
+	top: 230px;
 	right: 10px;
 	z-index: -10;
 
